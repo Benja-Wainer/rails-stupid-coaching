@@ -6,7 +6,7 @@ class QuestionsController < ApplicationController
 
     @coach_answer = if user_answer[-1] == '?'
                       'Silly question, get dressed and go to work!'
-                    elsif user_answer == 'I am going to work'
+                    elsif user_answer.downcase == 'i am going to work'
                       'Great!'
                     else
                       "I don't care, get dressed and go to work!"

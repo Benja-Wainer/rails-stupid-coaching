@@ -1,8 +1,15 @@
-<h1>Stupid Coaching</h1>
-<p><%= params[:answer] %></p>
-<p><em>-You</em></p>
+<div class="container">
+  <h1>Stupid Coaching</h1>
 
-<p><%= @coach_answer %></p>
-<p><em>-Your coach</em></p>
+  <div class="block">
+    <p><%= params[:answer] %></p>
+    <p><em>-You</em></p>
+  </div>
 
-<%= link_to 'Ask a new question', ask_path %>
+  <div class="block coach">
+    <p><strong><%= @coach_answer %></strong></p>
+    <p><em>-Your coach</em></p>
+  </div>
+
+  <%= link_to 'Ask a new question', ask_path %>
+</div>
